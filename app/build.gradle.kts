@@ -14,10 +14,8 @@ android {
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -46,7 +44,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-
     implementation ("io.reactivex.rxjava3:rxandroid:3.0.2")
     implementation ("io.reactivex.rxjava3:rxjava:3.1.5")
     implementation ("com.google.code.gson:gson:2.8.7")
@@ -62,8 +59,6 @@ dependencies {
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:adapter-rxjava2:2.9.0")
     implementation ("com.squareup.retrofit2:adapter-rxjava3:2.9.0")
-
-
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
